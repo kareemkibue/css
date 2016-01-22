@@ -1,2 +1,8 @@
 .sass-cache/
+*.css
 *.css.map
+.sass-cache/
+node_modules/
+bower_components/
+css/*.orig
+*.orig
