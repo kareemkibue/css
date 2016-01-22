@@ -1,0 +1,17 @@
+{
+    "name": "SASS-Custom",
+    "version": "0.1.0",
+    "author": "Charles Kibue",
+    "private": true,
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "matchdep": "*",        
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-sass": "*",
+        "grunt-postcss": "*",        
+        "autoprefixer": "*",
+        "cssnano": "*"
+    }
+}
