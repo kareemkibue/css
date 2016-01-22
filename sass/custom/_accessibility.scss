@@ -1,0 +1,19 @@
+// ***************************************	Accesibility Styles	***************************************//
+//** HTML4 Fallback - if not included in NormalizeCSS
+// *[hidden] { display: none !important; }
+
+// Hide Text inside tag
+.hide-text{
+	line-height: 0 !important; 
+    font-size: 0 !important;
+    color: transparent !important; 
+}
+
+// Screen Reader text
+.sr-only{
+	// display: none !important;
+	width: 0 !important;
+	height: 0 !important;
+	float: left !important;
+	@extend .hide-text;
+}
