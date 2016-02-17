@@ -14,14 +14,13 @@ module.exports = function(grunt){
 		    css: {
 		    	files: [
 		    		'sass/*.scss',
-		    		'sass/*/*.scss'
+		    		'sass/**/*.scss'
 		    	],
 		    	tasks: ['sass', 'postcss']
 		    },
             init: {
-                files: [
-                    'bower_components/*',
-                    'bower_components/*/*',
+                files: [                    
+                    'bower_components/**/',
                 ],
                 tasks: ['copy']
             }
