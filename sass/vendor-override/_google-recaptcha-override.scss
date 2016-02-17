@@ -1,0 +1,13 @@
+.captcha-container{
+	iframe{
+		max-width: 100%;
+	}
+	div{
+		height: auto !important;
+
+		@include respond(screen-xs){
+			width: 100% !important;
+		}
+		
+	}
+}

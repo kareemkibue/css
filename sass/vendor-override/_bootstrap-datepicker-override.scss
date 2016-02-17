@@ -1,0 +1,21 @@
+.datepicker.datepicker-dropdown{
+	font-family: $open-sans;
+
+	.active{
+		background-color: $shakespeare !important;
+		border-color: $shakespeare !important;
+		font-weight: 600;
+	}
+	.today{
+		background-color: $my-sin;
+		color: $white;
+		font-weight: 600;
+	}
+	.disabled{
+		color: $silver;
+
+		&.old{
+			color: lighten($silver, 5%);
+		}
+	}
+}

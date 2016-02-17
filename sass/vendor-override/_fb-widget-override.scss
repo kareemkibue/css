@@ -1,0 +1,9 @@
+#facebookWidget{
+	.fb_iframe_widget{
+		display: block;
+
+		& > span{
+			width: 100% !important;
+		}
+	}
+}

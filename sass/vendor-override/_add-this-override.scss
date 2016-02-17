@@ -1,0 +1,12 @@
+table.share {
+	td{
+		display: inline-block;
+		float: left;
+	}
+	aside a:nth-child(n+2){
+		margin-left: 15px;
+	}
+	.share-cell{
+		padding-left: 0;
+	}
+}

@@ -1,0 +1,23 @@
+// bx-slider styles override
+.bx-wrapper{
+	box-shadow: none;		
+	border: 0px none;
+	background: none;
+	margin: 0;
+
+	&, .bx-viewport{
+		height: 100% !important;
+	}
+}
+ul.bxslider{
+	&, & > li{
+		height: 100%;
+
+		// @include respond(screen-xs){
+			// height: auto;
+		// }
+	}
+	/* li[aria-hidden="true"]{
+		display: none;
+	} */
+}

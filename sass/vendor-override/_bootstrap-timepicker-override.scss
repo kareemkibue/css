@@ -1,0 +1,47 @@
+.bootstrap-timepicker-widget{
+	font-family: $open-sans;
+
+	table td{
+
+		a{
+			position: relative;
+			border-radius: 2px;
+			padding: 9px 0;
+
+			&:hover{
+				background-color: $pacific-blue;
+				border-color:  $pacific-blue;
+
+				span{
+					border-color: $white;
+				}
+			}
+		}
+
+		span.glyphicon{
+			position: absolute;			
+			@extend %absolute-center;			
+			display: inline-block;
+
+			width: 8px;
+		    height: 8px;
+		    border-right: 3px solid $pacific-blue;
+		    border-top: 3px solid $pacific-blue;		    
+		    // margin-right: 0.5em;
+
+			&.glyphicon-chevron-up{
+				top: 5px;
+				transform: rotate(-45deg);
+			}
+			&.glyphicon-chevron-down{
+				bottom: 5px;
+				transform: rotate(135deg);	
+			}
+		}
+		
+		input{
+			width: 30px;
+		}
+	}
+
+}

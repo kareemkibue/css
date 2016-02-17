@@ -1,0 +1,66 @@
+.gsc-control-cse, .gsc-input{
+	padding: 0 !important;
+}
+table.gsc-search-box td{
+	font-size: 16px !important;
+}
+input[type="text"].gsc-input{
+	@extend .input-gray;
+	background-color: #E6E6E6 !important;
+	padding: 13px 10px !important;	
+	font-size: em(16px) !important;
+	font-family: $open-sans;
+	height: auto !important;
+	background-position: 3% center !important;
+}
+td.gsc-search-button, td.gsc-clear-button{
+	padding-left: 5px !important;
+	padding-right: 0px !important;
+}
+input[type="button"].gsc-search-button{
+	@extend .btn;	
+	padding: 13px 53px !important;
+	height: auto !important;
+	font-size: em(16px) !important;
+	font-family: $open-sans;
+
+	@include respond(screen-xs){
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+}
+.gsc-control-wrapper-cse *{
+	font-family: $open-sans !important;	
+	font-size: 16px !important;	
+}
+.gsc-control-cse .gsc-table-result{
+	// font-size: 16px !important;	
+
+	td, a, a *{
+		font-size: em(16px) !important;
+	}
+}
+.gsc-result, .gsc-table-cell-snippet-close{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+a.gs-title, a.gs-title *{
+	color: $cerulean !important;		
+}
+.gsc-cursor-box{
+	text-align: center !important;
+}
+.gsc-cursor .gsc-cursor-page{
+
+	&.gsc-cursor-current-page{
+		color: $cerulean !important;
+	}
+
+}
+.gcsc-branding-text *{
+	font-size: em(13px) !important;
+}
+
+table.gsc-table-result .gsc-table-cell-thumbnail.gsc-thumbnail{
+	display: none !important;
+}
