@@ -50,5 +50,10 @@
 @import "layout/inner/inner";
 @import "layout/inner/aside";
 
+// Blog Pages
+@import "layout/blog/blog";
+@import "layout/blog/blog-archive";
+@import "layout/blog/blog-single";
+
 // Inner Pages - Misc
 @import "layout/misc/page-not-found";
