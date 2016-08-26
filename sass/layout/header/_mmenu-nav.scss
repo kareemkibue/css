@@ -1,0 +1,180 @@
+// nav.mm-menu.mobile-nav .mm-panel, nav.mm-menu.flyout .mm-panel{
+nav.mobile-nav.mm-menu .mm-panel{
+	border-right: 1px solid lighten($silver, 15%);
+	background-color: $tundora !important;
+	padding: 40px 0 0;
+}
+
+nav.mobile-nav.mm-menu .mm-navbar{
+	height: auto;
+	// border-bottom: 1px solid $tundora-4d;		
+	cursor: pointer;
+	// background-color: $jelly-bean;
+	display: none;
+
+	a.mm-title{
+		color: $white;		
+		text-align: left;
+		// font-weight: 600;
+		padding: 20px 0 20px 5px;
+		position: relative;		
+
+		&:before{
+			content: "";
+			position: absolute;
+			// @extend .menu-close-ico;
+			left: 0;
+			@extend .v-abs-center;
+
+		}
+
+	}
+	a.mm-prev{
+		// height: 60px;
+		height: 100%;
+
+		&:before{
+			position: absolute;
+			// @extend .arrow-back;
+			@include transform(none);
+			border: 0px none;
+			@extend .v-abs-center;
+			left: 20px;
+			width: 20px*.6;
+			height: 40px*.6;			
+		}
+	}
+}
+
+// Hide the MM Title on the first page
+nav.mm-menu #mm-1{
+	padding-top: 0;
+
+	.mm-navbar{
+		display: none;
+	}
+	ul.mm-listview{
+		position: relative;
+		top: -20px;
+	}
+}
+
+
+nav.mobile-nav.mm-menu .contact-info{
+	margin: 45px 30px;
+	background-color: $cod-gray;
+	@include border-radius(20px);
+	color: $white;
+	text-align: center;
+	font-weight: 400;
+	padding: 12px 12px 12px 12px;
+	position: relative;
+
+	.ico{
+		@include setHW(100px, 100px, .2);
+		fill: $key-lime-pie;
+		left: 20px;
+	}
+
+	a{
+		color: inherit;
+		display: block;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+nav.mobile-nav.mm-menu ul{
+	margin: 0px !important;		
+	font-size: inherit;
+	display: block;
+	width: 100%;
+	float: none;
+
+	li{	
+		color: $white;
+		// border-top: 1px solid $mercury;		
+		display: block;
+		float: none;
+		padding: 0 30px;
+
+		&:after{
+			border: 0px none !important;
+		}
+		&:last-child{
+			// border-bottom: 1px solid $mercury;
+		}		
+		&.mm-selected a{
+			// background-color: $pear;
+			// border-color: $pear;
+			// color: $cod-gray;
+		}	 		
+		&:hover, &:focus, &.active{				
+			background-color: lighten($tundora, 10%) !important;
+			color: $white;
+			// border-color: $pear;		
+		}
+	}
+
+	li a{
+		color: $white;
+		font-size: em($f16);
+		text-overflow: clip;
+		white-space: normal;
+		text-transform: uppercase;		
+		font-weight: 700;
+		padding: 15px 40px 15px 0;	
+		background: inherit !important;
+		// border-bottom: 1px solid $tundora-4d;		
+		// border-left: 0px none !important;						
+		position: relative;
+
+		@include respond(screen-xxs){
+			// padding: 20px 0 20px 45px;
+			font-size: em(16px);
+		}
+
+		&:active, &:focus{
+			// background-color: inherit;
+		}				
+		&.mm-next{
+
+			&:before{
+				// border-color: $tundora-4d;
+				left: auto;
+				right: 60px;
+			}
+			&:after{
+				content: "";
+				@include transform(none);
+				border-color: transparent !important;
+				// @extend .arrow-next;		
+				width: 20px*.6;
+				height: 35px*.6;	
+				fill: $silver;		
+			}
+		}
+	}	
+	li:nth-child(n+2) a{
+		border-top: 1px solid $dove-gray;
+	}
+	.sub-title{
+		margin-top: 15px;
+		padding: 20px 40px;				
+		text-transform: uppercase;
+		// color: $pear;				
+		font-weight: 600;				
+		// border-bottom: 1px solid $tundora-4d;
+	}
+	/* span{
+		white-space: normal !important;
+		padding: 20px;
+		line-height: 1.5;
+	}	 */
+
+	/* @include respond(screen-xs){
+		display: block;
+	} */
+}
