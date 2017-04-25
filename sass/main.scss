@@ -1,19 +1,21 @@
-// Vendor Styles
-// @import "base/vendor";
+/*Utilities*/
 
-// Base 
+@import "utils/variables";
+@import "utils/media";
+@import "utils/mixins";
+@import "utils/classes";
+@import "utils/accessibility";
+@import "utils/animations";
+
+/*Base */
+
+@import "base/global";
 @import "base/typography";
 @import "base/swatch";
-@import "base/animations";
-@import "base/variables";
 
-// Custom
-@import "custom/media";
-@import "custom/mixins";
-@import "custom/classes";
-@import "custom/accessibility";
+/*Vendor Override Styles*/
 
-// Vendor Override Styles
+@import "vendor-override/normalize-override";
 // @import "vendor-override/add-this-override";
 // @import "vendor-override/bootstrap-datepicker-override";
 // @import "vendor-override/bootstrap-timepicker-override";
@@ -24,36 +26,28 @@
 // @import "vendor-override/google-search-override ";
 // @import "vendor-override/google-translate-override ";
 // @import "vendor-override/jquery-ui-override";
-@import "vendor-override/normalize-override";
 // @import "vendor-override/perfect-scrollbar-override";
 
-// @import "components/";
+/*Components*/
+
 @import "components/alerts";
 @import "components/breadcrumbs";
 @import "components/buttons";
 @import "components/forms";
 @import "components/lists";
+// @import "components/mmenu-nav";
 @import "components/modals";
 @import "components/tables";
 @import "components/text";
 
-// Global Partials
-@import "base/global";
-@import "base/containers";
-@import "layout/header/header";
-@import "layout/footer/footer";
+/*Layout*/
 
-// Home
-@import "layout/home/home";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
 
-// Inner Pages - Layout
-@import "layout/inner/inner";
-@import "layout/inner/aside";
+/*Pages*/
 
-// Blog Pages
-@import "layout/blog/blog";
-@import "layout/blog/blog-archive";
-@import "layout/blog/blog-single";
-
-// Inner Pages - Misc
-@import "layout/misc/page-not-found";
+@import "pages/home";
+@import "pages/page-not-found";

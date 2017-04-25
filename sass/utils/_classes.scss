@@ -99,64 +99,80 @@ img{
 	height: auto;
 }
 
+// ***************************************	Form Elements	***************************************//
+textarea{
+	resize: none;
+}
+
+
+// ***************************************	Unset HTML Select	***************************************//
+%unset-select{
+	appearance: none;
+	outline: none;	
+	border: 0px none;
+
+	&::-ms-expand{
+		display:none;
+	}
+}
 
 // ***************************************	SVG	***************************************//
 // SVG Container Class
 svg.ico{
 	display: inline-block;	
+	vertical-align: top;
 	position: absolute;	
-	transition: .35s ease-in;	
-
-	&.ico{
-		position: relative;
-	}
+	transition: .35s ease-in;
 }
 
 // ***************************************	CLEARFIXES	***************************************//
 .clearfix{
 	clear: both !important;
+	display: block !important;
 }
 .clearfix-lg{
 	clear: both !important;
+	display: block !important;
 
 	@include respond(tablet){
-		display: none;		
+		display: none !important;		
 	}
 }
 .clearfix-wide{
 	clear: both !important;
+	display: block !important;
 
 	@include respond(screen-xs){
-		display: none;		
+		display: none !important;		
 	}
 }
 .clearfix-tablet{
-	display: none;
+	display: none !important;
 
 	@include respond(tablet){
-		display: block;
+		display: block !important;
 		clear: both !important;
 	}
 	@include respond(screen-xs){
-		display: none;		
+		display: none !important;		
 	}
 }
 .clearfix-sm{
-	display: none;
+	display: none !important;
 
 	@include respond(screen-sm){
-		display: block;
+		display: block !important;
 		clear: both !important;
 	}
 	@include respond(screen-xs){
-		display: none;
+		display: none !important;
 	}
 }
 .clearfix-xs{
-	display: none;
+	display: none !important;
 
 	@include respond(screen-xs){
-		display: block;
+		display: block !important;
 		clear: both !important;
 	}
 }
@@ -194,6 +210,24 @@ svg.ico{
 	display: none;
 }
 
+// Desktop Only
+%desktop-only{
+	display: block;
+
+	@include respond(tablet){
+		display: none !important;
+	}
+}
+
+// Hidden on Desktop
+%hidden-lg{
+	display: none;
+
+	@include respond(tablet){
+		display: block !important;
+	}
+}
+
 // Hidden on Desktop
 %hidden-lg{
 	display: none;
@@ -217,7 +251,11 @@ svg.ico{
 	@include respond(tablet-all){
 		display: block;
 	}
-	@include respond(screen-xs){
+}
+
+   // Hidden only Tablets, Phones
+%hidden-tablet{	
+	@include respond(tablet){
 		display: none;
 	}
 }
@@ -237,7 +275,7 @@ svg.ico{
 %handhelds-only{
 	display: none;
 
-	@include respond(tablet){
+	@include respond(tablet-all){
 		display: block;
 	}
 }
@@ -268,9 +306,20 @@ svg.ico{
 }
 
 // ***************************************	Text Styles	***************************************//
-p, ol, ul, li, h1, h2, h3{
+p, ol, ul, h1, h2, h3{
 	&:empty{
 		display: none !important;
+	}
+}
+
+// ***************************************	Unset HTML Select	***************************************//
+%unset-select{
+	appearance: none;
+	outline: none;	
+	border: 0px none;
+
+	&::-ms-expand{
+		display:none;
 	}
 }
 

@@ -1,75 +1,76 @@
-module.exports = function(grunt){
-	require('matchdep').filterDev('grunt-*', './package.json').forEach(grunt.loadNpmTasks);
-	// grunt.loadNpmTasks('grunt-sass');
+module.exports = function ( grunt ) {
+    require( 'matchdep' )
+        .filterDev( 'grunt-*', './package.json' )
+        .forEach( grunt.loadNpmTasks );
 
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON( 'package.json' ),
 
-		// Grunt Watch
-		watch: {
-			options: {
-		      reload: true,
-		      atBegin: true
-		    },
-		    css: {
-		    	files: [
+        /*Grunt Watch*/
+        watch: {
+            options: {
+                reload: true,
+                atBegin: true
+            },
+            css: {
+                files: [
 		    		'sass/*.scss',
 		    		'sass/**/*.scss'
 		    	],
-		    	tasks: ['sass', 'postcss']
-		    },
+                tasks: [ 'sass', 'postcss' ]
+            },
             init: {
-                files: [                    
+                files: [
                     'bower_components/**/',
                 ],
-                tasks: ['copy']
+                tasks: [ 'copy' ]
             }
         },
 
-        // Task - Compile SASS
+        /*Task - Compile SASS*/
         sass: {
-        	options: {
-        		sourceMap: true
-        	},
-        	dev: {
-        		files: {
-        			'css/styles.css': 'sass/styles.scss'
-        		}
-        	}
+            options: {
+                sourceMap: true
+            },
+            dev: {
+                files: {
+                    'css/main.css': 'sass/main.scss'
+                }
+            }
         },
 
-        // Task - PostCSS
+        /* Task - PostCSS*/
         postcss: {
-        	options: {
-        		map: true,
-        		processors: [
-                    require('autoprefixer')({
-                        browsers: ['last 2 versions']
-                    })
+            options: {
+                map: true,
+                processors: [
+                    require( 'autoprefixer' )( {
+                        browsers: [ 'last 2 versions' ]
+                    } )
                 ]
-        	},
-        	dev: {
-        		src: 'css/*.css'
-        	}
+            },
+            dev: {
+                src: 'css/*.css'
+            }
         },
 
-        // Task - Copy over Vendor Scripts
-        copy: {             
-            customSass: {
+        /*Task - Copy over Vendor Scripts*/
+        copy: {
+            /*customSass: {
                 files: [
                     {
                         src: 'bower_components/sass-custom/sass/custom/**',
-                        dest: 'sass/custom/',                        
+                        dest: 'sass/custom/',
                         expand: true,
-                        flatten: true,                         
-                        filter: 'isFile'                
+                        flatten: true,
+                        filter: 'isFile'
                     }
-                ]                
-            }
+                ]
+            }*/
         }
 
-	});	// grunt.initConfig()
+    } );
 
-    grunt.registerTask('default', []);  
-	grunt.registerTask('init', ['copy']);	
+    grunt.registerTask( 'default', [] );
+    grunt.registerTask( 'init', [ 'copy' ] );
 };
