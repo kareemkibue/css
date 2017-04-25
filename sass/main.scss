@@ -7,11 +7,9 @@
 @import "utils/accessibility";
 @import "utils/animations";
 
-/*Base */
+/*Vendors*/
 
-@import "base/global";
-@import "base/typography";
-@import "base/swatch";
+// @import "vendors/normalize";
 
 /*Vendor Override Styles*/
 
@@ -28,6 +26,19 @@
 // @import "vendor-override/jquery-ui-override";
 // @import "vendor-override/perfect-scrollbar-override";
 
+/*Base*/
+
+@import "base/global";
+@import "base/typography";
+@import "base/swatch";
+
+/*Layout*/
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
 /*Components*/
 
 @import "components/alerts";
@@ -40,14 +51,9 @@
 @import "components/tables";
 @import "components/text";
 
-/*Layout*/
-
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-
 /*Pages*/
 
 @import "pages/home";
-@import "pages/page-not-found";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/404";
