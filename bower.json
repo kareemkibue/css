@@ -1,12 +1,11 @@
 {
-    "name": "SASS-Starter",
-    "version": "0.0.1",
-    "dependencies": {        
-        "jquery-ui": "latest",
-        "jQuery.mmenu": "latest",                
-        "normalize.css": "latest",                
-        "bootstrap-sass-official": "latest",
-        "sass-custom": "https://github.com/charles-kibue/sass-custom.git#*"
-    },
-    "private": "true"
+    "name": "css",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "jquery-ui": "^1.12.1",
+        "jQuery.mmenu": "^6.0.2",
+        "normalize-css": "normalize.css#^6.0.0",
+        "bootstrap-sass": "bootstrap-sass-official#^3.3.7"
+    }
 }
