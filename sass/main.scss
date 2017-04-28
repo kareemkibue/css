@@ -1,5 +1,6 @@
 /*Utilities*/
 
+@import "base/swatch";
 @import "utils/variables";
 @import "utils/media";
 @import "utils/mixins";
@@ -13,24 +14,13 @@
 
 /*Vendor Override Styles*/
 
-@import "vendor-override/normalize-override";
-// @import "vendor-override/add-this-override";
-// @import "vendor-override/bootstrap-datepicker-override";
-// @import "vendor-override/bootstrap-timepicker-override";
-// @import "vendor-override/bxslider-override";
-// @import "vendor-override/fb-widget-override";
-// @import "vendor-override/google-recaptcha-classic-override";
-// @import "vendor-override/google-recaptcha-override";
-// @import "vendor-override/google-search-override ";
-// @import "vendor-override/google-translate-override ";
-// @import "vendor-override/jquery-ui-override";
-// @import "vendor-override/perfect-scrollbar-override";
+// @import "vendor-override/normalize-override";
 
 /*Base*/
 
 @import "base/global";
 @import "base/typography";
-@import "base/swatch";
+@import "themes/default";
 
 /*Layout*/
 
@@ -41,15 +31,7 @@
 
 /*Components*/
 
-@import "components/alerts";
-@import "components/breadcrumbs";
 @import "components/buttons";
-@import "components/forms";
-@import "components/lists";
-// @import "components/mmenu-nav";
-@import "components/modals";
-@import "components/tables";
-@import "components/text";
 
 /*Pages*/
 

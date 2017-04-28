@@ -1,19 +1,40 @@
-// ***************************************	Accesibility Styles	***************************************//
-//** HTML4 Fallback - if not included in NormalizeCSS
-// *[hidden] { display: none !important; }
+/*Accesibility Styles*/
 
-// Hide Text inside tag
-.hide-text{
-	line-height: 0 !important; 
-    font-size: 0 !important;
-    color: transparent !important; 
+
+/*Font Resizer toggle styles*/
+
+body {
+    &.medium-font {
+        font-size: 17px;
+    }
+    &.large-font {
+        font-size: 18px;
+    }
 }
 
-// Screen Reader text
-.sr-only{
-	// display: none !important;
-	width: 0 !important;
-	height: 0 !important;
-	float: left !important;
-	@extend .hide-text;
+
+/*HTML4 Fallback*/
+
+*[hidden] {
+    display: none !important;
+}
+
+
+/*Hide Text inside tag*/
+
+.hide-text {
+    line-height: 0 !important;
+    font-size: 0 !important;
+    color: transparent !important;
+}
+
+
+/*Screen Reader text*/
+
+.sr-only {
+    // display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    float: left !important;
+    @extend .hide-text;
 }
