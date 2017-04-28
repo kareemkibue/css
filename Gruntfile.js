@@ -14,8 +14,8 @@ module.exports = function ( grunt ) {
             },
             css: {
                 files: [
-		    		'sass/*.scss',
-		    		'sass/**/*.scss'
+		    		'Sass/*.scss',
+		    		'Sass/**/*.scss'
 		    	],
                 tasks: [ 'sass', 'postcss' ]
             },
@@ -34,7 +34,7 @@ module.exports = function ( grunt ) {
             },
             dev: {
                 files: {
-                    'css/main.css': 'sass/main.scss'
+                    'Stylesheets/main.css': 'Sass/main.scss'
                 }
             }
         },
@@ -50,7 +50,7 @@ module.exports = function ( grunt ) {
                 ]
             },
             dev: {
-                src: 'css/*.css'
+                src: 'Stylesheets/*.css'
             }
         },
 
