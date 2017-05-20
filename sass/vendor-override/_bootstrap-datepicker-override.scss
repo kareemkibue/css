@@ -1,21 +1,19 @@
-.datepicker.datepicker-dropdown{
-	font-family: $open-sans;
-
-	.active{
-		background-color: $shakespeare !important;
-		border-color: $shakespeare !important;
-		font-weight: 600;
-	}
-	.today{
-		background-color: $my-sin;
-		color: $white;
-		font-weight: 600;
-	}
-	.disabled{
-		color: $silver;
-
-		&.old{
-			color: lighten($silver, 5%);
-		}
-	}
+.datepicker.datepicker-dropdown {
+    font-family: $base-font;
+    .active {
+        background-color: $base-background-color !important;
+        border-color: $border-color !important;
+        font-weight: $base-font-weight;
+    }
+    .today {
+        background-color: $base-background-color;
+        color: $base-color;
+        font-weight: $base-font-weight;
+    }
+    .disabled {
+        color: $base-color;
+        &.old {
+            color: darken($base-color, 5%);
+        }
+    }
 }

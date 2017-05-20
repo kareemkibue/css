@@ -1,21 +1,10 @@
-.wrapper{	
-	clear: both;
-	overflow: hidden;
-}
-
-.container{
-	width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;	
-	position: relative;
-
-	@include respond(screen-md){
-		width: 100%;
-	}
-	@include respond(tablet){
-		padding: 0 30px;		
-	}
-	@include respond(screen-xs){
-		padding: 0 15px;
-	}
+.container {
+    @extend %clear;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    @include respond(screen-md) {
+        width: 100%;
+    }
 }
