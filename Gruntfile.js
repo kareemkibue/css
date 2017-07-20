@@ -18,12 +18,6 @@ module.exports = function ( grunt ) {
 		    		'Sass/**/*.scss'
 		    	],
                 tasks: [ 'sass', 'postcss' ]
-            },
-            init: {
-                files: [
-                    'bower_components/**/',
-                ],
-                tasks: [ 'copy' ]
             }
         },
 
@@ -52,25 +46,9 @@ module.exports = function ( grunt ) {
             dev: {
                 src: 'Stylesheets/*.css'
             }
-        },
-
-        /*Task - Copy over Vendor Scripts*/
-        copy: {
-            /*customSass: {
-                files: [
-                    {
-                        src: 'bower_components/sass-custom/sass/custom/**',
-                        dest: 'sass/custom/',
-                        expand: true,
-                        flatten: true,
-                        filter: 'isFile'
-                    }
-                ]
-            }*/
         }
 
     } );
 
-    grunt.registerTask( 'default', [] );
-    grunt.registerTask( 'init', [ 'copy' ] );
+    grunt.registerTask( 'default', [ 'watch' ] );
 };

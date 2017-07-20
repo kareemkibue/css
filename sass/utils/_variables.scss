@@ -2,8 +2,17 @@
 
 $base-font-size: '';
 $base-font-family: '';
+$base-font-weight: 400;
 
 /*Colors*/
 
-$base-color:$black;
-$link-color:$black;
+$base-color: '';
+$base-background-color: '';
+$link-color: '';
+$border-color: '';
+$box-shadow-color: '';
+
+/*Dimensions*/
+
+$border-width: 1px;
+$base-border-radius: '';
