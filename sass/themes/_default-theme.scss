@@ -69,3 +69,7 @@ input[type="submit"] {
     background-color: transparent;
     transition: .25s ease;
 }
+
+textarea {
+    resize: none;
+}
