@@ -14,24 +14,24 @@ var vendorCssFiles = [
     'node_modules/normalize.css/normalize.css'
 ];
 
-gulp.task( 'watch', function () {
+gulp.task( 'watch', function() {
     gulp.watch( 'sass/**/*.scss', [ 'css' ] );
 } );
 
-gulp.task( 'build', function ( callback ) {
+gulp.task( 'build', function( callback ) {
     return runSequence(
         'vendorStyles',
         'css'
     );
 } );
 
-gulp.task( 'vendorStyles', function () {
+gulp.task( 'vendorStyles', function() {
     return gulp.src( vendorCssFiles )
         .pipe( concat( '_vendor.scss' ) )
-        .pipe( gulp.dest( 'sass/vendors/' ) );
+        .pipe( gulp.dest( 'sass/base/' ) );
 } );
 
-gulp.task( 'css', function () {
+gulp.task( 'css', function() {
     return gulp.src( 'sass/main.scss' )
         .pipe( sass()
             .on( 'error', sass.logError ) )

@@ -8,19 +8,15 @@
 @import "utils/accessibility";
 @import "utils/animations";
 
-/*Vendors*/
-
-// @import "vendors/normalize";
-
-/*Vendor Override Styles*/
-
-// / @import "vendor-override/normalize-override";
-
 /*Base*/
 
 @import "base/global";
 @import "base/typography";
-@import "themes/default-theme";
+@import "base/vendor";
+
+/*Vendor Override Styles*/
+
+// / @import "vendor-override/normalize-override";
 
 /*Layout*/
 
@@ -35,7 +31,7 @@
 
 /*Pages*/
 
-@import "pages/home";
-@import "pages/about";
-@import "pages/contact";
-@import "pages/404";
+// @import "pages/home";
+// @import "pages/about";
+// @import "pages/contact";
+// @import "pages/404";
