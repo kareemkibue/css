@@ -1,7 +1,7 @@
 /*Utilities*/
 
-@import "base/swatch";
-@import "utils/variables";
+@import "utils/typography";
+@import "utils/swatch";
 @import "utils/media";
 @import "utils/mixins";
 @import "utils/classes";
@@ -10,13 +10,13 @@
 
 /*Base*/
 
+@import "base/variables";
 @import "base/global";
-@import "base/typography";
 @import "base/vendor";
 
 /*Vendor Override Styles*/
 
-// / @import "vendor-override/normalize-override";
+@import "vendor-override/normalize-override";
 
 /*Layout*/
 
@@ -28,10 +28,9 @@
 /*Components*/
 
 @import "components/buttons";
+@import "components/text";
 
 /*Pages*/
 
-// @import "pages/home";
-// @import "pages/about";
-// @import "pages/contact";
-// @import "pages/404";
+@import "pages/home";
+@import "pages/404";
