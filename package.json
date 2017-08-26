@@ -1,29 +1,29 @@
 {
     "name": "css",
-    "version": "0.2.0",
-    "repository": "https://github.com/kareemkibue/screen",
+    "version": "0.3.1",
+    "repository": "https://github.com/kareemkibue/css",
     "author": "Kareem Kibue <mail@kareemkibue.com>",
     "license": "MIT",
     "dependencies": {
         "normalize.css": "^5.0.0"
     },
     "devDependencies": {
-        "grunt": "~0.4.5",
-        "matchdep": "*",
-        "grunt-contrib-watch": "*",
-        "grunt-contrib-concat": "*",
-        "grunt-contrib-copy": "*",
-        "grunt-sass": "*",
-        "grunt-postcss": "*",
         "autoprefixer": "*",
         "cssnano": "*",
+        "grunt": "~0.4.5",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-postcss": "*",
+        "grunt-sass": "*",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "^4.0.0",
+        "gulp-concat": "^2.6.1",
         "gulp-cssnano": "^2.1.2",
-        "gulp-sass": "^3.1.0",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "^2.6.0",
+        "matchdep": "*",
         "run-sequence": "^1.2.2"
     }
 }
