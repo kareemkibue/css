@@ -7,7 +7,7 @@
         position: relative;
         padding-top: 15px !important;
         &:after {
-            @extend .required-asterisk;
+            // @extend .required-asterisk;
             right: 15px;
         }
         input#recaptcha_response_field {

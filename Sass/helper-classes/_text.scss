@@ -1,0 +1,10 @@
+/* Hide empty HTML tags
+Useful for preserving layout in blog posts editable from within a WYSIWYG editor
+Ghost spaces within these can be taken out using JavaScript/jQuery
+*/
+
+p, ol, ul, h1, h2, h3 {
+    &:empty {
+        display: none !important;
+    }
+}

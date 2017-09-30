@@ -1,0 +1,6 @@
+// Universal box-sizing
+@mixin set-box-sizing {
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+}

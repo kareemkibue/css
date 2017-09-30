@@ -1,0 +1,12 @@
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+    td, th {
+        padding: 15px 30px;
+    }
+    th {
+        text-transform: uppercase;
+    }
+    tr:hover {}
+    tbody tr:nth-child(n+2) td {}
+}
