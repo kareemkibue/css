@@ -13,23 +13,7 @@
 @import "base/variables";
 @import "base/global";
 // @import "base/vendor";
-
-/*Vendor Override Styles*/
-
 @import "vendor-resets";
-
-/*Layout*/
-
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-
-/*Components*/
-
+@import "layout";
 @import "components";
-
-/*Pages*/
-
-@import "pages/home";
-@import "pages/404";
+@import "pages";
