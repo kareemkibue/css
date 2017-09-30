@@ -1,36 +1,9 @@
-/*Utilities*/
-
-@import "utils/typography";
-@import "utils/swatch";
-@import "utils/media";
-@import "utils/mixins";
-@import "utils/classes";
-@import "utils/accessibility";
-@import "utils/animations";
-
-/*Base*/
-
+@import "utils";
+@import "helper-classes";
+@import "mixins";
 @import "base/variables";
 @import "base/global";
-@import "base/vendor";
-
-/*Vendor Override Styles*/
-
-@import "vendor-override/normalize-override";
-
-/*Layout*/
-
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-
-/*Components*/
-
-@import "components/buttons";
-@import "components/text";
-
-/*Pages*/
-
-@import "pages/home";
-@import "pages/404";
+@import "vendor";
+@import "layout";
+@import "components";
+@import "pages";

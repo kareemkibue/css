@@ -1,0 +1,16 @@
+textarea {
+    resize: none;
+}
+
+
+/* Unset HTML Select defauly styling  
+This facilitates custom styling */
+
+%unset-select {
+    appearance: none;
+    outline: none;
+    border: 0 none;
+    &::-ms-expand {
+        display: none;
+    }
+}

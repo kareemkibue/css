@@ -1,12 +1,12 @@
 .datepicker.datepicker-dropdown {
-    font-family: $base-font;
+    font-family: $base-font-size;
     .active {
-        background-color: $base-background-color !important;
+        background-color: $base-bg-color !important;
         border-color: $border-color !important;
         font-weight: $base-font-weight;
     }
     .today {
-        background-color: $base-background-color;
+        background-color: $base-bg-color;
         color: $base-color;
         font-weight: $base-font-weight;
     }

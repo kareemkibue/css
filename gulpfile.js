@@ -40,5 +40,5 @@ gulp.task( 'css', function() {
             cascade: false
         } ) )
         .pipe( sourceMaps.write( '.' ) )
-        .pipe( gulp.dest( 'Stylesheets' ) );
+        .pipe( gulp.dest( 'stylesheets' ) );
 } );
