@@ -3,8 +3,7 @@
 @import "mixins";
 @import "base/variables";
 @import "base/global";
-// @import "base/vendor";
-@import "vendor-resets";
+@import "vendor";
 @import "layout";
 @import "components";
 @import "pages";
