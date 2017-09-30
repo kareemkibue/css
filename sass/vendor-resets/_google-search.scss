@@ -1,0 +1,72 @@
+.gsc-control-cse, .gsc-input {
+    padding: 0 !important;
+}
+
+table.gsc-search-box td {
+    font-size: $base-font-size !important;
+}
+
+input[type="text"].gsc-input {
+    // @extend .input-gray;
+    background-color: $base-bg-color !important;
+    padding: 13px 10px !important;
+    font-size: $base-font-size !important;
+    font-family: $base-font-family;
+    height: auto !important;
+    background-position: 3% center !important;
+}
+
+td.gsc-search-button, td.gsc-clear-button {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+}
+
+input[type="button"].gsc-search-button {
+    @extend .btn;
+    padding: 13px 53px !important;
+    height: auto !important;
+    font-size: $base-font-size !important;
+    font-family: $base-font-family;
+    @include respond(screen-xs) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+.gsc-control-wrapper-cse * {
+    font-family: $base-font-family !important;
+    font-size: $base-font-size !important;
+}
+
+.gsc-control-cse .gsc-table-result {
+    td, a, a * {
+        font-size: $base-font-size !important;
+    }
+}
+
+.gsc-result, .gsc-table-cell-snippet-close {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+a.gs-title, a.gs-title * {
+    color: $base-color !important;
+}
+
+.gsc-cursor-box {
+    text-align: center !important;
+}
+
+.gsc-cursor .gsc-cursor-page {
+    &.gsc-cursor-current-page {
+        color: $base-color !important;
+    }
+}
+
+.gcsc-branding-text * {
+    font-size: $base-font-size !important;
+}
+
+table.gsc-table-result .gsc-table-cell-thumbnail.gsc-thumbnail {
+    display: none !important;
+}

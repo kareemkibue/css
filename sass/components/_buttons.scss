@@ -1,0 +1,10 @@
+.btn {
+    display: inline-block;
+    position: relative;
+    margin: 5px 10px;
+    border: 0;
+    box-shadow: none;
+    &:hover {
+        text-decoration: none;
+    }
+}

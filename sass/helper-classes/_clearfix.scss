@@ -1,0 +1,81 @@
+/* A cleaner alternative to using overflow:hidden. 
+Source: CSSTricks */
+
+%clear {
+    &:after {
+        // IE8+
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Clear = quirks mode
+Source: CSSTricks */
+
+%clear-ie {
+    &:after {
+        // IE6+
+        visibility: hidden;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+
+/* Clearfixes based on TWBS v3+ 
+Source: Twitter Bootstrap */
+
+%clearfix {
+    clear: both !important;
+    display: block !important;
+}
+
+%clearfix-lg {
+    clear: both !important;
+    display: block !important;
+    @include respond(tablet) {
+        display: none !important;
+    }
+}
+
+%clearfix-wide {
+    clear: both !important;
+    display: block !important;
+    @include respond(screen-xs) {
+        display: none !important;
+    }
+}
+
+%clearfix-tablet {
+    display: none !important;
+    @include respond(tablet) {
+        display: block !important;
+        clear: both !important;
+    }
+    @include respond(screen-xs) {
+        display: none !important;
+    }
+}
+
+%clearfix-sm {
+    display: none !important;
+    @include respond(screen-sm) {
+        display: block !important;
+        clear: both !important;
+    }
+    @include respond(screen-xs) {
+        display: none !important;
+    }
+}
+
+%clearfix-xs {
+    display: none !important;
+    @include respond(screen-xs) {
+        display: block !important;
+        clear: both !important;
+    }
+}

@@ -1,0 +1,25 @@
+nav.mobile-nav.mm-menu .mm-panel {
+    border-right: $border-width solid $border-width;
+    background-color: $base-bg-color !important;
+    padding: 40px 0 0;
+}
+
+nav.mobile-nav.mm-menu .mm-navbar {
+    height: auto;
+    cursor: pointer;
+    display: none;
+    a.mm-title {
+        color: $base-color;
+        text-align: left;
+        padding: 20px 0 20px 5px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+    }
+    a.mm-prev {
+        height: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+/*Base Config*/
+
+@include set-box-sizing;
+@include selection($black, $white);
+
+/*Global Styles*/
+
+body {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    color: $base-color;
+    background-color: $white;
+    font-weight: 400;
+    line-height: 1.1;
+}
