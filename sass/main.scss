@@ -12,7 +12,7 @@
 
 @import "base/variables";
 @import "base/global";
-@import "base/vendor";
+// @import "base/vendor";
 
 /*Vendor Override Styles*/
 
@@ -27,8 +27,7 @@
 
 /*Components*/
 
-@import "components/buttons";
-@import "components/text";
+@import "components";
 
 /*Pages*/
 
