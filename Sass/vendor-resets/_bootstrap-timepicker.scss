@@ -1,12 +1,12 @@
 .bootstrap-timepicker-widget {
-    font-family: $open-sans;
+    font-family: $base-font-family;
     table td {
         a {
             position: relative;
             $base-border-radius: 2px;
             padding: 10px 0;
             &:hover {
-                background-color: $base-background-color;
+                background-color: $base-bg-color;
                 border-color: $border-color;
                 span {
                     border-color: $border-color;
