@@ -1,4 +1,0 @@
-@mixin setWH($width, $height: $width, $ratio: 1) {
-    width: $width * $ratio;
-    height: $height * $ratio;
-}
