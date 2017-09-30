@@ -15,3 +15,14 @@ package-lock.json
 
 # Source Control
 *.orig
+
+# IDE - VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio, VS-Code Settings
+.vscode/
+.vs
