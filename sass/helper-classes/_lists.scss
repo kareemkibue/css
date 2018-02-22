@@ -2,8 +2,7 @@
 Source: Twitter Bootstrap */
 
 %list-inline {
-    padding-left: 0;
-    margin: 0;
+    padding: 0; // margin: 0;
     &>li {
         display: inline-block;
         float: left;
@@ -15,7 +14,7 @@ Source: Twitter Bootstrap */
 }
 
 %list-block {
-    padding-left: 0;
+    padding: 0;
     &>li {
         display: block;
         list-style: none;
